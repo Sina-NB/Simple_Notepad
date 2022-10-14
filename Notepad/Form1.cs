@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,38 +23,26 @@ namespace Notepad
             {
                 case "ino":
                     return "Arduino";
-                    break;
                 case "cs":
                     return "C#";
-                    break;
                 case "cpp":
                     return "C++";
-                    break;
                 case "c":
                     return "C";
-                    break;
                 case "btwo":
                     return "Braintwo";
-                    break;
                 case "json":
                     return "Json";
-                    break;
                 case "xml":
                     return "Xml";
-                    break;
                 case "html":
                     return "HTML";
-                    break;
                 case "css":
                     return "CSS";
-                    break;
                 case "js":
                     return "JavaScript";
-                    break;
                 default:
                     return "Text";
-                    break;
-
             }
         }
 
@@ -183,14 +171,6 @@ namespace Notepad
                     case Keys.A:
                         e.SuppressKeyPress = true;
                         textBox1.SelectAll();
-                        break;
-                    case Keys.N:
-                        e.SuppressKeyPress = true;
-                        newToolStripMenuItem_Click(sender, e);
-                        break;
-                    case Keys.S:
-                        e.SuppressKeyPress = true;
-                        saveToolStripMenuItem_Click(sender, e);
                         break;
                 }
             }
